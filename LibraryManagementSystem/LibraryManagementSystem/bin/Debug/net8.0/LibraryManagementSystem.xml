@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryManagementSystem</name>
+    </assembly>
+    <members>
+        <member name="M:LibraryManagementSystem.Controllers.AuthorsController.CreateAuthor(LibraryManagementSystem.Dtos.CreateAuthorDto)">
+            <summary>
+            Добавление нового автора.
+            </summary>
+            <param name="authorDto">Параметры для создания автора</param>
+            <returns>Созданный автор</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            Получение всех авторов.
+            </summary>
+            <returns>Список авторов</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.AuthorsController.GetAuthorById(System.Int32)">
+            <summary>
+            Получение информации о конкретном авторе.
+            </summary>
+            <param name="id">ID автора</param>
+            <returns>Информация о конкретном авторе</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.AuthorsController.UpdateAuthor(System.Int32,LibraryManagementSystem.Dtos.AuthorDto)">
+            <summary>
+            Обновление информации о существующем авторе.
+            </summary>
+            <param name="id">ID автора</param>
+            <param name="authorDto">"Параметры для обновления"</param>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.AuthorsController.DeleteAuthor(System.Int32)">
+            <summary>
+            Удаление автора.
+            </summary>
+            <param name="id">ID автора</param>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.BooksController.CreateBook(LibraryManagementSystem.Dtos.CreateBookDto)">
+            <summary>
+            Добавление новой книги.
+            </summary>
+            <param name="bookDto">Данные для добавления</param>
+            <returns>Информация о добавленной книге</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.BooksController.GetBooks">
+            <summary>
+            Получение списка всех книг.
+            </summary>
+            <returns>Список книг</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.BooksController.GetBookById(System.Int32)">
+            <summary>
+            Получение информации о конкретной книге.
+            </summary>
+            <param name="id">ID книги</param>
+            <returns>Информация о конкретной книге</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.BooksController.UpdateBook(System.Int32,LibraryManagementSystem.Dtos.BookDto)">
+            <summary>
+            Обновление существующей книги.
+            </summary>
+            <param name="id">ID книги</param>
+            <param name="bookDto">Данные для обновления книги</param>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.BooksController.DeleteBook(System.Int32)">
+            <summary>
+            Удаление книги.
+            </summary>
+            <param name="id">ID книги</param>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.LoansController.CreateLoan(LibraryManagementSystem.Dtos.CreateLoanDto)">
+            <summary>
+            Выдача книги читателю
+            </summary>
+            <param name="loanDto">Данные о выдаче</param>
+            <returns>Информация о новой выдаче книги</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.LoansController.GetLoans">
+            <summary>
+            Получение списка всех выдач.
+            </summary>
+            <returns>Список выдач</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.LoansController.GetLoanById(System.Int32)">
+            <summary>
+            Получение информации о конкретной выдаче.
+            </summary>
+            <param name="id">ID выдачи</param>
+            <returns>Информация о выдаче книги</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.LoansController.DeleteLoan(System.Int32)">
+            <summary>
+            Возврат книги.
+            </summary>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.ReadersController.CreateReader(LibraryManagementSystem.Dtos.CreateReaderDto)">
+            <summary>
+            Регистрация нового читателя.
+            </summary>
+            <param name="readerDto">Данные для регистрации</param>
+            <returns>Зарегистрированный читатель</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.ReadersController.GetReaders">
+            <summary>
+            Получение списка всех читателей.
+            </summary>
+            <returns>Список читателей</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.ReadersController.GetReaderById(System.Int32)">
+            <summary>
+            Получение информации о конкретном читателе.
+            </summary>
+            <param name="id">ID читателя</param>
+            <returns>Информация о конкретном читателе</returns>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.ReadersController.UpdateReader(System.Int32,LibraryManagementSystem.Dtos.ReaderDto)">
+            <summary>
+            Обновление существующего читателя.
+            </summary>
+            <param name="id">ID читателя</param>
+            <param name="readerDto">Данные для обновления читателя</param>
+        </member>
+        <member name="M:LibraryManagementSystem.Controllers.ReadersController.DeleteReader(System.Int32)">
+            <summary>
+            Удаление читателя.
+            </summary>
+            <param name="id">ID читателя</param>
+        </member>
+        <member name="T:LibraryManagementSystem.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:LibraryManagementSystem.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LibraryManagementSystem.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:LibraryManagementSystem.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
